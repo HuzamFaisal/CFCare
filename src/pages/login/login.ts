@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { HomePage } from '../home/home';
+//import { HomePage } from '../home/home';
 import { VitaminsAndMineralsPage } from '../vitamins-and-minerals/vitamins-and-minerals';
 import { FoodIntakeChartPage } from '../food-intake-chart/food-intake-chart';
 import { EnzymeIntakeChartPage } from '../enzyme-intake-chart/enzyme-intake-chart';
@@ -8,13 +8,14 @@ import { EnzymePage } from '../enzyme/enzyme';
 
 import { NutritionPage } from '../nutrition/nutrition';
 import { FoodIntakePage } from '../food-intake/food-intake';
-
+import { TabsControllerPage } from '../tabs-controller/tabs-controller';
 
 import { SignupPage } from '../signup/signup';
 
 
 @Component({
   selector: 'page-login',
+
   templateUrl: 'login.html'
 })
 export class LoginPage {
@@ -24,7 +25,7 @@ export class LoginPage {
   }
   goToHome(params){
     if (!params) params = {};
-    this.navCtrl.push(HomePage);
+    this.navCtrl.push(TabsControllerPage);
     }goToEnzymeIntakeChart(params){
     if (!params) params = {};
     this.navCtrl.push(EnzymeIntakeChartPage);
