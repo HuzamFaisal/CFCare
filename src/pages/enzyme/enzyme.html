@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Enzyme
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page4">
+  <form id="enzyme-form2">
+    <ion-item id="enzyme-select4">
+      <ion-label>
+        Enzyme Intake
+      </ion-label>
+      <ion-select name="">
+        <ion-option>
+          Lactase
+        </ion-option>
+        <ion-option>
+          Amylase
+        </ion-option>
+        <ion-option>
+          Glucoamylase
+        </ion-option>
+        <ion-option>
+          Cellulase
+        </ion-option>
+        <ion-option>
+          Hemicellulase
+        </ion-option>
+        <ion-option>
+          Supplemental pectinase
+        </ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item id="enzyme-input6">
+      <ion-label>
+        Date :
+      </ion-label>
+      <ion-input type="date" placeholder=""></ion-input>
+    </ion-item>
+    <ion-item id="enzyme-input9">
+      <ion-label>
+        mg :
+      </ion-label>
+      <ion-input type="number" placeholder=""></ion-input>
+    </ion-item>
+  </form>
+  <button id="enzyme-button3" ion-button color="positive" block>
+    Update
+  </button>
+  <button id="enzyme-button11" ion-button color="positive" block on-click="goToEnzymeIntakeChart()">
+    History Trend
+  </button>
+</ion-content>

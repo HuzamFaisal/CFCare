@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Food Intake
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page9">
+  <form id="foodIntake-form3">
+    <ion-item id="foodIntake-textarea1">
+      <ion-label>
+        Food Type :
+      </ion-label>
+      <ion-textarea placeholder=""></ion-textarea>
+    </ion-item>
+    <ion-item id="foodIntake-input8">
+      <ion-label>
+        Calories :
+      </ion-label>
+      <ion-input type="number" placeholder=""></ion-input>
+    </ion-item>
+    <ion-item id="foodIntake-input10">
+      <ion-label>
+        Date :
+      </ion-label>
+      <ion-input type="date" placeholder=""></ion-input>
+    </ion-item>
+  </form>
+  <button id="foodIntake-button9" ion-button color="positive" block>
+    Update
+  </button>
+  <button id="foodIntake-button10" ion-button color="positive" block on-click="goToFoodIntakeChart()">
+    History Trend
+  </button>
+</ion-content>
